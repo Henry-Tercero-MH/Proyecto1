@@ -1,0 +1,252 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "Main#main(String[])",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "Proyecto1",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "Main",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1219410713 { 
+   	label=ColaSoporte
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1694703200 { 
+   	label=ColaSoporte
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ColaSoporte1219410713XXXEscalarTicketS0[
+	label="+ EscalarTicketS()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaSoporte
+
+&#10;  Metodo para ecalar ticket en la seccion de soporte&#10; "
+	fontcolor=darkgreen
+];
+
+ColaSoporte1219410713XXXTrabajarTicketSoporte1808118735[
+	label="+ TrabajarTicketSoporte()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaSoporte
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_2390489 { 
+   	label=Main
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1706522830 { 
+   	label=Main
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Main2390489XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="Main
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_828195500 { 
+   	label=Mod11Nit
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Mod11Nit2390489XXXvalidacionNit1808118735[
+	label="+ validacionNit()"
+	style=filled
+	fillcolor=white
+	tooltip="Mod11Nit
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_308121488 { 
+   	label=ColaDesarrollo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_590740050 { 
+   	label=ColaDesarrollo
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ColaDesarrollo308121488XXXTrabajarTicketSoporte1808118735[
+	label="+ TrabajarTicketSoporte()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaDesarrollo
+
+null"
+	fontcolor=darkgreen
+];
+
+ColaDesarrollo308121488XXXrandom0[
+	label="+ random()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaDesarrollo
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_578206585 { 
+   	label=ColaMesa
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_590551566 { 
+   	label=ColaMesa
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ColaMesa578206585XXXEscalarTicket0[
+	label="+ EscalarTicket()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaMesa
+
+null"
+	fontcolor=darkgreen
+];
+
+ColaMesa578206585XXXTrabajarTicketMesa1808118735[
+	label="+ TrabajarTicketMesa()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaMesa
+
+null"
+	fontcolor=darkgreen
+];
+
+ColaMesa578206585XXXagregarTicketsMesa341675193[
+	label="+ agregarTicketsMesa()"
+	style=filled
+	fillcolor=white
+	tooltip="ColaMesa
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+'edges    
+ColaDesarrollo308121488XXXTrabajarTicketSoporte1808118735 -> ColaDesarrollo308121488XXXrandom0;
+ColaMesa578206585XXXTrabajarTicketMesa1808118735 -> ColaMesa578206585XXXEscalarTicket0;
+ColaSoporte1219410713XXXTrabajarTicketSoporte1808118735 -> ColaSoporte1219410713XXXEscalarTicketS0;
+Main2390489XXXmain1859653459 -> ColaDesarrollo308121488XXXTrabajarTicketSoporte1808118735;
+Main2390489XXXmain1859653459 -> ColaMesa578206585XXXTrabajarTicketMesa1808118735;
+Main2390489XXXmain1859653459 -> ColaMesa578206585XXXagregarTicketsMesa341675193;
+Main2390489XXXmain1859653459 -> ColaSoporte1219410713XXXTrabajarTicketSoporte1808118735;
+Main2390489XXXmain1859653459 -> Mod11Nit2390489XXXvalidacionNit1808118735;
+    
+}
+@enduml
